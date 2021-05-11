@@ -1,0 +1,76 @@
+﻿Hostname,Make,Model,MAC Addresses,Process List,Netstat,Local User Accounts,Security Policy,Audit Settings,Application Event IDs,Application Event ID Frequencies,Security Event IDs,Security Event ID Frequencies,System EventIDs,System Event ID Frequencies,Windows Firewall Settings,Network Interface Information,"Date, Time, Timezone",User Rights,SoftwareList,Patchlist,HKCC Hash,HKCR Hash,HKCU Hash,HKLM Hash,HKU Hash,Are removable devices allowed?
+LAPTOP-ABCD1234,Lenovo,ThoughtPad,"11:22:33:44:55:66
+77:88:99:AA:BB:CC
+","...
+svchost
+svchost
+svchost
+System
+SystemSettings
+...","
+Active Connections
+
+  Proto  Local Address          Foreign Address        State           PID
+  TCP    0.0.0.0:111            0.0.0.0:0              LISTENING       1234
+  RpcEptMapper
+ [svchost.exe]
+  ...","
+Name               Enabled LastLogon
+----               ------- ---------
+Administrator        False
+DefaultAccount       False
+Guest                False
+John Smith           True 32-Jan-21 1:01:01 AM
+WDAGUtilityAccount   False","[System Access]
+MinimumPasswordAge = 0
+MaximumPasswordAge = 100
+MinimumPasswordLength = 0
+…","System audit policy
+
+Category/Subcategory                      Setting
+System
+  Security System Extension               No Auditing
+
+  System Integrity                        Success and Failure
+
+  ...","5678
+1000
+10009
+…","16
+1
+2
+…","6400
+4600
+4610
+...","4
+222
+2345
+…","50010
+50020
+7000
+...","17
+18
+33
+…","Name                            : Domain
+Enabled                         : True
+DefaultInboundAction            : NotConfigured
+DefaultOutboundAction           : NotConfigured
+…","
+IPAddress                    AddressFamily InterfaceAlias
+---------                    ------------- --------------
+1234::5678:90ab:cdef:7000%12          IPv6 Local Area Connection* 2
+abcb::bcdc:cded:defe:3000%21          IPv6 Local Area Connection* 1
+...","Saturday, 31 Apr, 2021 12:00:00 PM
+
+
+Eastern Standard Time","[Privilege Rights]
+SeNetworkLogonRight = Everyone,BUILTIN\Administrators,BUILTIN\Users,BUILTIN\Backup Operators,BUILTIN\Device Owners
+SeBackupPrivilege = BUILTIN\Administrators,BUILTIN\Backup Operators
+…","Microsoft Office Home and Student 2016;
+Vulkan Run Time Libraries;
+Microsoft Visual C++ 2019 X64 Additional Runtime;
+…","
+Description     InstalledOn          
+-----------     -----------          
+Update          32-Jan-21 12:00:00 AM
+Security Update 30-Feb-21 12:00:00 AM",2805DEE634DDAE808EFE1388EBC5F58DA1B23C46FDD8AA9B81BF26A5905D02BE,A48C7563B7C098FD0331A11A6CE2D1043274DA2352C9C7A6FAC533E7719D9E69,99BD24E8587D39B3B329BE4518F63B78652F510B5C3531919E0E76600AE3C348,31EE6EDFC648C75DC9DDB762C7C8DBF14CA3AC3912EFB9F93DADCDD2206665CD,537123BDE1B9FA5C0C3458C8A90A66ED799EBBCB133DEA8087E8CD091C7724E4,Removable storage devices not restricted
