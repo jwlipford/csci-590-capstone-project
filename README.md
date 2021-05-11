@@ -29,13 +29,13 @@
  16. Media access, are USBs allowed? Or CDs?
  17. User Access Controls enabled or disabled? What are they?
 
- Our script `Get-SecurityPolicy.ps1` retrieves information from artifacts 5, 8, 12ii, and 17. `Get-UserRights.ps1` retrieves information from artifact 12i. Otherwise, `Get-Artifact1.ps1` retrieves Artifact 1's information, etc. These scritps can be run individually, or `Out-ArtifactsCsv.ps1` can be run to call all the others.
+ Our script `Get-SecurityPolicy.ps1` retrieves information from artifacts 5, 8, 12ii, and 17. `Get-UserRights.ps1` retrieves information from artifact 12i. Otherwise, `Get-Artifact1.ps1` retrieves artifact 1's information, `Get-Artifact2.ps1` retrieve's artifact 2's information, and so on. These scritps can be run individually, or `Out-ArtifactsCsv.ps1` can be run to call all the others.
  
 ##### My scripts
  I was the primary programmer for artifacts 1, 2, 3, 7, 9, and 15 and for `Get-SecurityPolicy.ps1`, `Get-UserRights.ps1`, and `Out-ArtifactsCsv.ps1`.
 
 ### Execution
-##### Running
+##### Running (6 scripts complete)
 ```
 PowerShell> .\Out-ArtifactsCsv.ps1
 --------------- Working
@@ -50,3 +50,6 @@ PowerShell> .\Out-ArtifactsCsv.ps1
 
 PowerShell>
 ```
+
+### Output
+ The mock output file *Artifacts.csv* contains a sample of the kind of information the program produces. If viewed directly on GitHub, newlines are not displayed; if needed, open the file in Excel and select a monospace font. The program produces other files, but *Artifacts.csv* is the most important one.
